@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 import { ThemeProps } from '../ThemeProvider';
 
@@ -36,22 +36,20 @@ const Title = styled.div`
   margin-right: 72px;
 `;
 
-class AppHeader extends PureComponent<AppHeaderProps> {
-  render() {
-    const { title } = this.props;
+const AppWindowHeader: FC<AppHeaderProps> = (props) => {
+  const { title } = props;
 
-    return (
-      <Container>
-        <Controls>
-          <Control color="red" />
-          <Control color="yellow" />
-          <Control color="green" />
-        </Controls>
+  return (
+    <Container>
+      <Controls>
+        <Control color="red" />
+        <Control color="yellow" />
+        <Control color="green" />
+      </Controls>
 
-        <Title>{title}</Title>
-      </Container>
-    );
-  }
-}
+      <Title>{title}</Title>
+    </Container>
+  );
+};
 
-export default AppHeader;
+export default AppWindowHeader;

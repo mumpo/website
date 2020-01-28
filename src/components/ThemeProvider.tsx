@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { FC } from 'react';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 
 const theme = {
@@ -14,18 +14,16 @@ const theme = {
 export type Theme = typeof theme;
 export interface ThemeProps {
   theme: Theme
-};
-
-class ThemeProvider extends PureComponent {
-  render() {
-    const { children } = this.props;
-
-    return (
-      <StyledThemeProvider theme={theme}>
-        {children}
-      </StyledThemeProvider>
-    );
-  }
 }
+
+const ThemeProvider: FC = (props) => {
+  const { children } = props;
+
+  return (
+    <StyledThemeProvider theme={theme}>
+      {children}
+    </StyledThemeProvider>
+  );
+};
 
 export default ThemeProvider;
