@@ -1,18 +1,14 @@
 import React from 'react';
-import AppWindow from './components/app/AppWindow';
-import TextEditor from './components/text-editor/TextEditor';
 import ThemeProvider from './components/ThemeProvider';
-import { sergiCode } from './constants/sergiCode';
+import { HashRouter } from 'react-router-dom';
+import Screen from './components/Screen';
 
 function Main() {
   return (
     <ThemeProvider>
-      <AppWindow title="Sergi Férriz">
-        <TextEditor
-          code={sergiCode}
-          language="Typescript"
-        />
-      </AppWindow>
+      <HashRouter>
+        <Screen />
+      </HashRouter>
     </ThemeProvider>
   );
 }

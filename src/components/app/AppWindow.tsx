@@ -8,16 +8,10 @@ interface AppWindowProps {
 }
 
 const Container = styled.div`
-  -moz-box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-  -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
   background: #fff;
   max-width: 800px;
-  margin: 50px auto;
-
-  @media (max-width: 600px) {
-    margin: 50px 10px;
-  }
+  min-width: 300px;
 `;
 
 const AppWindow: FC<AppWindowProps> = (props) => {
