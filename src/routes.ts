@@ -20,12 +20,12 @@ export const routes: AppRoute[] = [{
 }, {
   name: 'Photos',
   path: '/photos',
-  iconPath: '/images/icon-photos.png',
+  iconPath: '/images/icon-photos.svg',
   component: Photos
 }, {
   name: 'Files',
   path: '/files',
-  iconPath: '/images/icon-files.png',
+  iconPath: '/images/icon-folder.svg',
   component: Files
 }];
 

@@ -6,7 +6,7 @@ const Photos: FC = () => {
     <AppWindow
       title="Photos"
     >
-      Attach photo
+      <img src="/images/me.jpg" alt="Me" />
     </AppWindow>
   )
 };

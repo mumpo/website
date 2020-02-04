@@ -10,17 +10,12 @@ const Files: FC = () => {
         <File
           name="Currículum Vitae.pdf"
           path="/cv.pdf"
-          icon="/images/icon-pdf.svg"
+          icon="/images/icon-cv.svg"
         />
         <File
           name="Linkedin"
           path="https://www.linkedin.com/in/sergi-ferriz"
-          icon="/images/icon-pdf.svg"
-        />
-        <File
-          name="Linkedin"
-          path="https://www.linkedin.com/in/sergi-ferriz"
-          icon="/images/icon-pdf.svg"
+          icon="/images/icon-linkedin.svg"
         />
       </FileExplorer>
     </AppWindow>

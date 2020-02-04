@@ -15,8 +15,8 @@ const Navigation = () => {
           <route.component />
         </Route>
       ))}
+      {defaultRoute && <Redirect exact from="/" to={defaultRoute.path} />}
     </Switch>
-    {defaultRoute && <Redirect exact from="/" to={defaultRoute.path} />}
   </>;
 };
 
