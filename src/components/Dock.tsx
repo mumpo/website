@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { Route } from 'react-router-dom';
 import { routes } from '../routes';
-import AppIcon from './app/AppIcon';
+import AppIcon from './AppIcon';
 
 const Container = styled.div`
   position: fixed;

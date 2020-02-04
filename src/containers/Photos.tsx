@@ -1,12 +1,13 @@
 import React, { FC } from 'react';
-import AppWindow from '../components/app/AppWindow';
+import AppWindow from '../components/AppWindow';
+import PhotoViewer from '../components/PhotoViewer';
 
 const Photos: FC = () => {
   return (
-    <AppWindow
-      title="Photos"
-    >
-      <img src="/images/me.jpg" alt="Me" />
+    <AppWindow>
+      <PhotoViewer>
+        <img src="/images/me.jpg" alt="Me" />
+      </PhotoViewer>
     </AppWindow>
   )
 };

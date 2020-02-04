@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
-import AppWindow from '../components/app/AppWindow';
+import AppWindow from '../components/AppWindow';
 import FileExplorer from '../components/FileExplorer';
 import File from '../components/File';
 
 const Files: FC = () => {
   return (
-    <AppWindow title="Files">
+    <AppWindow>
       <FileExplorer>
         <File
           name="Currículum Vitae.pdf"

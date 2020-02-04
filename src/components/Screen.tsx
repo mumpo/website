@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import Navigation from './Navigation';
 import Dock from './Dock';
+import StatusBar from "./StatusBar";
 
 const Container = styled.div`
   display: flex;
@@ -12,6 +13,7 @@ const Container = styled.div`
 
 const Screen: FC = () => (
   <Container>
+    <StatusBar />
     <Navigation />
     <Dock />
   </Container>

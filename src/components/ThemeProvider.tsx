@@ -2,12 +2,12 @@ import React, { FC } from 'react';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 
 const theme = {
-  app: {
-    control: {
-      red: '#e74c3c',
-      yellow: '#f1c40f',
-      green: '#2ecc71'
-    }
+  toolBar: {
+    background: '#e1e2e4',
+    close: '#e74c3c'
+  },
+  statusBar: {
+    background: '#f5f5f5'
   }
 };
 

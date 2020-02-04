@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 import { sergiCode } from '../constants/sergiCode';
 import TextEditor from '../components/text-editor/TextEditor';
-import AppWindow from '../components/app/AppWindow';
+import AppWindow from '../components/AppWindow';
 
 const Ide: FC = () => {
   return (
-    <AppWindow title="Sergi Férriz">
+    <AppWindow>
       <TextEditor
         code={sergiCode}
         language="Typescript"
