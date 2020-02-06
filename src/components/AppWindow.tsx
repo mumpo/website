@@ -4,7 +4,7 @@ import ToolBar from './ToolBar';
 
 const Bar = styled.div`
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-  background: #fff;
+  background: ${props => props.theme.window.background};
   max-width: 100%;
   min-width: 460px;
 

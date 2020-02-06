@@ -12,10 +12,10 @@ const Link = styled.a`
   flex-direction: column;
   width: 80px;
   text-decoration: none;
+  color: inherit;
 `;
 
 const Name = styled.span`
-  color: black;
   font-size: 0.8em;
   text-align: center;
   margin-top: 3px;

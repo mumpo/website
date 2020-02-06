@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { sergiCode } from '../constants/sergiCode';
-import TextEditor from '../components/text-editor/TextEditor';
+import TextEditor from '../components/TextEditor';
 import AppWindow from '../components/AppWindow';
 
 const Ide: FC = () => {

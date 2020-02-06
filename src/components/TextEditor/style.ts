@@ -1,7 +1,8 @@
-export const darkStyle = {
+import { DefaultTheme } from 'styled-components';
+
+export const style = (theme: DefaultTheme) => ({
     "code[class*=\"language-\"]": {
-        "color": "#c5c8c6",
-        "textShadow": "0 1px rgba(0, 0, 0, 0.3)",
+        "color": theme.main.fontColor,
         "fontFamily": "Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
         "direction": "ltr",
         "textAlign": "left",
@@ -24,9 +25,6 @@ export const darkStyle = {
     },
     "pre[class*=\"language-\"]": {
         "display": "flex",
-        "color": "#c5c8c6",
-        "textShadow": "0 1px rgba(0, 0, 0, 0.3)",
-        "fontFamily": "Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
         "textAlign": "left",
         "whiteSpace": "pre",
         "wordSpacing": "normal",
@@ -41,28 +39,21 @@ export const darkStyle = {
         "hyphens": "none",
         "margin": "0",
         "overflow": "auto",
-        "background": "#31394a"
-    },
-    ":not(pre) > code[class*=\"language-\"]": {
-        "background": "#1d1f21",
-        "padding": ".1em",
-        "borderRadius": ".3em"
+        "background": theme.window.background
     },
     "comment": {
-        "color": "#7d8b94"
+        "color": theme.code.gray
     },
     "prolog": {
-        "color": "#7d8b94"
+        "color": theme.code.gray
     },
     "doctype": {
-        "color": "#7d8b94"
+        "color": theme.code.gray
     },
     "cdata": {
-        "color": "#7d8b94"
+        "color": theme.code.gray
     },
-    "punctuation": {
-        "color": "#c5c8c6"
-    },
+    "punctuation": {},
     ".namespace": {
         "Opacity": ".7"
     },
@@ -76,16 +67,16 @@ export const darkStyle = {
         "color": "#96CBFE"
     },
     "class-name": {
-        "color": "#e6c277",
+        "color": theme.code.yellow
     },
     "maybe-class-name": {
-        "color": "#e6c277",
+        "color": theme.code.yellow,
     },
     "boolean": {
-        "color": "#99CC99"
+        "color": theme.code.green
     },
     "constant": {
-        "color": "#99CC99"
+        "color": theme.code.green
     },
     "symbol": {
         "color": "#f92672"
@@ -97,16 +88,16 @@ export const darkStyle = {
         "color": "#3dacec"
     },
     "selector": {
-        "color": "#7bc36d"
+        "color": theme.code.green
     },
     "attr-name": {
-        "color": "#7bc36d"
+        "color": theme.code.green
     },
     "string": {
-        "color": "#7bc36d"
+        "color": theme.code.green
     },
     "char": {
-        "color": "#7bc36d"
+        "color": theme.code.green
     },
     "builtin": {
         "color": "#3dacec"
@@ -121,7 +112,7 @@ export const darkStyle = {
         "color": "#ea5b65"
     },
     "entity": {
-        "color": "#e6c277",
+        "color": theme.code.yellow,
         "cursor": "help"
     },
     "url": {
@@ -155,4 +146,4 @@ export const darkStyle = {
     "italic": {
         "fontStyle": "italic"
     }
-}
+});

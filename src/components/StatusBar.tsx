@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import styled from "styled-components";
 import {routes} from "../routes";
 import {Route, Switch} from "react-router-dom";
+import DarkModeToggle from './DarkModeToggle';
 
 const Bar = styled.header`
   position: fixed;
@@ -13,6 +14,7 @@ const Bar = styled.header`
   box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  padding: 0 10px;
 `;
 
 const AppName = styled.span`
@@ -30,6 +32,7 @@ const StatusBar: FC = () => (
         </Route>
       ))}
     </Switch>
+    <DarkModeToggle />
   </Bar>
 );
 
