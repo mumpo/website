@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {routes} from "../routes";
 import {Route, Switch} from "react-router-dom";
 import DarkModeToggle from './DarkModeToggle';
+import Clock from './Clock';
 
 const Bar = styled.header`
   position: fixed;
@@ -19,8 +20,24 @@ const Bar = styled.header`
 
 const AppName = styled.span`
   flex-grow: 1;
-  text-align: center;
   font-weight: bold;
+
+  @media (min-width: 680px) {
+    text-align: center;
+  }
+`;
+
+const Tools = styled.div`
+  position: absolute;
+  top: 0;
+  right: 10px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+
+  > * {
+    margin-left: 10px;
+  }
 `;
 
 const StatusBar: FC = () => (
@@ -32,7 +49,10 @@ const StatusBar: FC = () => (
         </Route>
       ))}
     </Switch>
-    <DarkModeToggle />
+    <Tools>
+      <Clock />
+      <DarkModeToggle />
+    </Tools>
   </Bar>
 );
 

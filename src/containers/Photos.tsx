@@ -3,12 +3,17 @@ import AppWindow from '../components/AppWindow';
 import PhotoViewer from '../components/PhotoViewer';
 
 import MeImg from '../assets/images/me.jpg';
+import styled from 'styled-components';
+
+const Img = styled.img`
+  max-width: 100%;
+`;
 
 const Photos: FC = () => {
   return (
     <AppWindow>
       <PhotoViewer>
-        <img src={MeImg} alt="Me" />
+        <Img src={MeImg} alt="Me" />
       </PhotoViewer>
     </AppWindow>
   )
